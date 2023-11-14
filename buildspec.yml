@@ -11,9 +11,9 @@ phases:
     commands:
       - echo build Docker image on `date`
       - docker build -t todo:v1 .
-      - docker tag todo:v1 962804699607.dkr.ecr.us-west-2.amazonaws.com/g4-c2-todo:v1
+      - docker tag todo:v1 962804699607.dkr.ecr.us-west-2.amazonaws.com/g4-c2-todo:latest
   post_build:
     commands:
       - echo build Docker image complete `date`
       - echo push latest Docker images to ECR...
-      - docker push 962804699607.dkr.ecr.us-west-2.amazonaws.com/g4-c2-todo:v1
+      - docker push 962804699607.dkr.ecr.us-west-2.amazonaws.com/g4-c2-todo:latest
