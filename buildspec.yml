@@ -18,6 +18,6 @@ phases:
       - echo push latest Docker images to ECR...
       - docker push 962804699607.dkr.ecr.us-west-2.amazonaws.com/g4-c2-todo:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"todo", "imageUri":"https://us-west-2.console.aws.amazon.com/ecs/v2/clusters/g4-c2-ecs/services/g4-c2-service/tasks?region=us-west-2"}]' > imagedefinitions.json
+      - printf '[{"name":"g4-c2-todo:latest", "imageUri":"962804699607.dkr.ecr.us-west-2.amazonaws.com/g4-c2-todo:latest"}]' > imagedefinitions.json
 artifacts:
   files: imagesdefinitions.json
