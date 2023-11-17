@@ -20,4 +20,4 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"todo", "imageUri":"962804699607.dkr.ecr.us-west-2.amazonaws.com/g4-c2-todo:latest"}]' > imagedefinitions.json
 artifacts:
-  files: imagesdefinitions.json
+  files: imagedefinitions.json
